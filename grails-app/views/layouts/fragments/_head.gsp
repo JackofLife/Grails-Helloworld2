@@ -1,7 +1,7 @@
 <%@ page import="grails.util.Environment" %>
 <title>
     <g:if test="${Environment.current != Environment.PRODUCTION}">${Environment.current}</g:if>
-    <g:layoutTitle default="Texan Title"/>
+    <g:layoutTitle default="Web Application"/>
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

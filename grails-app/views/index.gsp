@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="contained"/>
+    <meta name="layout" content="main"/>
     <title>Application Details</title>
 </head>
 <body>
-    <g:render template="/layouts/fragments/navbarCrud" model="[
-        breadcrumbs: [
-            [title: 'Control Panel', action: 'cpanel', icon: 'fa fa-fw fa-cogs'],
-            [title: 'App Details', active: true, icon: 'fa fa-fw fa-list']
-        ]
+    <g:render template="/layouts/fragments/breadcrumbs" model="[
+            breadcrumbs: [[title: 'App Details', active: true, icon: 'fa fa-fw fa-list']]
     ]"/>
 
     <div class="row">
