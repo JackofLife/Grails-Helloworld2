@@ -9,7 +9,7 @@
         <form class="form-inline mr-4 d-none d-sm-inline-block">
             <div class="input-group" id="searchBar">
                 <div class="input-group-append">
-                    <input class="form-control-sm rounded" type="search" placeholder="File or policy number" name="q" id="searchField"/>
+                    <input class="form-control-sm rounded" type="search" placeholder="Search..." name="q" id="searchField"/>
                     <button class="btn btn-sm btn-secondary" style="margin-left: -4px" type="submit">
                         <i class="fas fa-search"></i>
                     </button>

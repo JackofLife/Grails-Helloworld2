@@ -13,7 +13,7 @@
             </g:if>
             <g:else>
                 <li class="breadcrumb-item d-none d-sm-inline">
-                    <a href="${(b.uri == null ? createLink(controller: b.controller ?: controllerName, action: b.action ?: 'index', namespace: b.namespace) : b.uri)}">
+                    <a href="${b.uri ?: createLink(controller: b.controller ?: controllerName, action: b.action ?: 'index')}">
                         ${b.icon ? raw("<i class='$b.icon'></i>") : ""} ${b.title}
                     </a>
                 </li>
