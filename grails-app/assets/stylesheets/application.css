@@ -1,13 +1,121 @@
 /*
-* This is a manifest file that'll be compiled into application.css, which will include all the files
-* listed below.
-*
-* Any CSS file within this directory can be referenced here using a relative path.
-*
-* You're free to add application-wide styles to this file and they'll appear at the top of the
-* compiled file, but it's generally better to create a new file per style scope.
-*
-*= require main
-*= require mobile
-*= require_self
+*= require fa5/fontawesome.min
+*= require app/loading
+*= require app/branding
+*= require app/navbar
 */
+
+.btn-xs {
+    padding: 0 0.35em;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+/* Horizontally scrolling container for orders dashboard */
+.scrolling-container > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrolling-container > .row > .col-sm-4 {
+    display: inline-block;
+    float: none;
+}
+
+.font-sm {
+    font-size:0.75em !important;
+}
+
+.font-md {
+    font-size:0.9em !important;
+}
+
+.font-lg {
+    font-size:1.25em !important;
+}
+
+.ml-check {
+    margin-left: 1.35rem!important;
+}
+
+@media (min-width: 1280px) {
+    .modal-xl {
+        max-width: 1100px;
+    }
+}
+
+/* Bootstrap 4 Helpers and Overrides */
+.badge {
+    font-size: 90%;
+}
+
+.required-field {
+    color: #622;
+    font-weight: 600;
+}
+
+.form-control-file {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.15;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25em;
+}
+
+/* Enable scrolling for typeahead suggestions */
+ul.typeahead.dropdown-menu {
+    max-height: 334px;
+    overflow: auto;
+}
+
+/* Popup messages */
+.toast {
+    font-size: 1.0em;
+    min-width: 320px;
+    max-width: 640px;
+    background-color: rgba(255,255,255,1);
+}
+
+.toast-body {
+    font-weight: 600;
+    text-align: center;
+}
+
+.toast-overlay {
+    min-height: 125px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    pointer-events: none;
+}
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.breadcrumb-item > a:hover {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul.typeahead > li.active {
+    background-color: #c8c8dd;
+}
+
+.btn-light-db {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #d8d9da
+}
