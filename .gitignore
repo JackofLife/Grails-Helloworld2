@@ -8,6 +8,8 @@
 /logs
 *.log
 *.class
+.asscache
+.idea/
 
 # MacOS junk
 .DS_Store
