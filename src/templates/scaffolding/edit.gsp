@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="contained">
+    <meta name="layout" content="main">
     <title>Edit</title>
 </head>
 <body>
 <div class="row">
     <div class="col-sm-12">
-        <g:render template="/layouts/fragments/navbarCrud"
+        <g:render template="/layouts/fragments/breadcrumbs"
                   model="[breadcrumbs: [[title: 'List', action: 'index'], [title: 'Edit', active: true], [title: 'Create', action: 'create']]]"/>
         <h3>Edit</h3>
         <bs4:validationErrors instance="\${${propertyName}}"/>
