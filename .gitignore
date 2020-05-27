@@ -10,6 +10,7 @@
 *.class
 .asscache
 .idea/
+*.iml
 
 # MacOS junk
 .DS_Store
