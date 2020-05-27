@@ -1,4 +1,4 @@
-<%=packageName%>
+<%@ page import="com.example.TodoList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +11,10 @@
         <g:render template="/layouts/fragments/breadcrumbs"
                   model="[breadcrumbs: [[title: 'List', action: 'index'], [title: 'Edit', active: true], [title: 'Create', action: 'create']]]"/>
         <h3>Edit</h3>
-        <bs4:validationErrors instance="\${${propertyName}}"/>
-        <g:form action="update" method="PUT" <%=multiPart ? ' enctype="multipart/form-data"' : '' %>>
-            <g:hiddenField name="id" value="\${${propertyName}?.id}"/>
-            <g:hiddenField name="version" value="\${${propertyName}?.version}"/>
+        <bs4:validationErrors instance="${todoListInstance}"/>
+        <g:form action="update" method="PUT" >
+            <g:hiddenField name="id" value="${todoListInstance?.id}"/>
+            <g:hiddenField name="version" value="${todoListInstance?.version}"/>
             <fieldset>
                 <g:render template="form"/>
             </fieldset>

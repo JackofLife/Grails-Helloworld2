@@ -8,8 +8,9 @@
             <g:link class="dropdown-item" controller="home">
                 <i class="fas fa-fw mr-2 fa-home pr-1"></i> Home
             </g:link>
-            <g:link class="dropdown-item" controller="profile">
-                <i class="fas fa-fw mr-2 fa-user-edit"></i> My Profile
+            <g:link class="dropdown-item" controller="home" action="profile">
+                <i class="fas fa-fw mr-2 fa-user-edit">
+                </i> My Profile
             </g:link>
             <div class="dropdown-divider"></div>
             <form action="${createLink(uri:'/logout')}" method="post" id="logout">

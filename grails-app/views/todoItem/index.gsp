@@ -1,4 +1,4 @@
-<%=packageName%>
+<%@ page import="com.example.TodoItem" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@
                   model="[breadcrumbs: [[title: 'List', active: true], [title: 'Create', action: 'create']]]"/>
         <h3>List</h3>
         <g:render template="table"/>
-        <bs4:paginate total="\${${propertyName}Count}" block="${true}"/>
+        <bs4:paginate total="${todoItemInstanceCount}" block="true"/>
     </div>
 </div>
 </body>
